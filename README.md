@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+<h1 align="center">
+    Desafio Pactto - Fase 1
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">Objetivo: Recriar a página de dashboard</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/codi-andre/pactto.svg">
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/codi-andre/pactto.svg">
 
-## Expanding the ESLint configuration
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/codi-andre/pactto.svg">
+  <a href="https://github.com/codi-andre/pactto/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/codi-andre/pactto.svg">
+  </a>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  <a href="https://github.com/codi-andre/pactto/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/codi-andre/pactto.svg">
+  </a>
+</p>
 
-- Configure the top-level `parserOptions` property like this:
+<p align="center">
+  <a href="#como-utilizar">Como utilizar</a>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Como utilizar
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/codi-Andre/pactto.git
+
+npm install
+# or
+bun install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Inicie o servidor:
+
+```bash
+npm run dev
+# or
+bun dev
+```
+
+Acesse http://localhost:5173 com o seu navegador para ver o resultado.
+
+## Tecnologias
+
+Este projeto foi desenvolvido usando as seguintes tecnologias:
+
+- [React](https://react.dev/)
