@@ -36,6 +36,14 @@
     font-display: swap;
     font-family: "Montserrat";
     font-style: normal;
+    font-weight: 600;
+    src: url("./assets/fonts/montserrat-v26-latin-600.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "Montserrat";
+    font-style: normal;
     font-weight: 700;
     src: url("./assets/fonts/montserrat-v26-latin-700.woff2") format("woff2");
   }
@@ -52,5 +60,20 @@
   html {
     font-family: "Montserrat", system-ui, sans-serif;
     font-weight: 500;
+    background-color: #242424;
+    color: white;
+  }
+}
+
+@layer components {
+  .primary {
+    @apply border-accent-blue bg-accent-blue text-primary-800 hover:bg-accent-blue/90;
+  }
+  .secondary {
+    @apply border-2 border-yellow-500 bg-primary-800 text-secondary-200
+     hover:border-secondary-400 hover:bg-primary-900;
+  }
+  .muted {
+    @apply text-secondary-400 underline hover:text-secondary-200;
   }
 }
