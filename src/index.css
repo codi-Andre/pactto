@@ -63,17 +63,9 @@
     background-color: #242424;
     color: white;
   }
-}
 
-@layer components {
-  .primary {
-    @apply border-accent-blue bg-accent-blue text-primary-800 hover:bg-accent-blue/90;
-  }
-  .secondary {
-    @apply border-2 border-yellow-500 bg-primary-800 text-secondary-200
-     hover:border-secondary-400 hover:bg-primary-900;
-  }
-  .muted {
-    @apply text-secondary-400 underline hover:text-secondary-200;
+  body {
+    height: 100vh;
+    overflow-x: hidden;
   }
 }

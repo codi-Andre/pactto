@@ -11,9 +11,17 @@ export default {
         display: "'Museo Slab', system-ui, sans-serif",
         body: "Montserrat, system-ui, sans-serif",
       },
+      fontSize: {
+        "3xl": [
+          "2rem",
+          {
+            lineHeight: "2.375rem",
+          },
+        ],
+      },
       colors: {
         primary: {
-          600: "rgb(var(--primary300))",
+          600: "rgb(var(--primary600))",
           800: "rgb(var(--primary800))",
           900: "rgb(var(--primary900))",
         },
