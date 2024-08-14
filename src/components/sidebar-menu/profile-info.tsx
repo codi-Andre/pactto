@@ -9,9 +9,12 @@ export function ProfileInfo() {
       </h2>
 
       <div className="mt-8 flex items-end">
-        <Link to="/profile">
+        <Link
+          className="mb-1 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+          to="/profile"
+        >
           <UserRound
-            className="mb-1 rounded-full bg-secondary-700 text-white"
+            className="rounded-full bg-secondary-700 text-white"
             size={40}
           />
         </Link>
@@ -25,7 +28,8 @@ export function ProfileInfo() {
         </p>
         <Link
           to={"/subscription"}
-          className="mb-3 text-xs text-secondary-400 underline"
+          className="mb-3 text-xs text-secondary-400 underline hover:text-white
+           focus:outline-none focus:ring-2 focus:ring-white"
         >
           upgrade
         </Link>

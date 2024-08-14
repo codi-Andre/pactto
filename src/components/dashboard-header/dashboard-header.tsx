@@ -25,7 +25,7 @@ export function DashBoardHeader({ children, title }: DashBoardHeaderProps) {
         <Menu />
       </Button>
 
-      <h2 className="flex-1 text-xl font-bold lg:text-3xl">{title}</h2>
+      <h2 className="min-w-60 flex-1 text-xl font-bold lg:text-3xl">{title}</h2>
 
       {children}
     </header>

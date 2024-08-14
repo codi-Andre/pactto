@@ -1,12 +1,17 @@
 import { DashBoardHeader } from "@/components/dashboard-header/dashboard-header"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/check-box"
+import { ColorPicker } from "@/components/ui/color-picker"
 import { Select } from "@/components/ui/select"
 import { Slider } from "@/components/ui/slider"
 import { useState } from "react"
 
 export function ReviewSettings() {
   const [brushSize, setBrushSize] = useState<[number]>([3])
+  const [color1, setColor1] = useState("#ff0000")
+  const [color2, setColor2] = useState("#00ff00")
+  const [color3, setColor3] = useState("#ffffff")
+  const [color4, setColor4] = useState("#000000")
 
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2">
@@ -40,7 +45,12 @@ export function ReviewSettings() {
             />
           </div>
 
-          <div></div>
+          <div className="flex flex-wrap gap-3">
+            <ColorPicker label="Color 1" color={color1} setColor={setColor1} />
+            <ColorPicker label="Color 2" color={color2} setColor={setColor2} />
+            <ColorPicker label="Color 3" color={color3} setColor={setColor3} />
+            <ColorPicker label="Color 4" color={color4} setColor={setColor4} />
+          </div>
 
           <div className="flex flex-wrap gap-8">
             <label className="flex flex-col gap-2" htmlFor="Camera">
