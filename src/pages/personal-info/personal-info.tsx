@@ -36,7 +36,7 @@ export function PersonalInfo() {
           <Checkbox label="Medical" />
           <Checkbox label="Inspections" />
 
-          <Input variant="secondary" placeholder="Other" />
+          <Input variant="primary" placeholder="Other" />
         </fieldset>
 
         <fieldset className="mt-10 flex flex-col gap-4 p-4 sm:px-8">
