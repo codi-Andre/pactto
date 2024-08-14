@@ -11,6 +11,7 @@ import { PersonalInfo } from "./pages/personal-info/personal-info"
 import { Packages } from "./pages/packages/packages"
 import { Profile } from "./pages/profile/profile"
 import { Library } from "./pages/library/library"
+import { Subscription } from "./pages/subscription/subscription"
 
 export const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
           {
             path: "/library",
             element: <Library />,
+          },
+          {
+            path: "/subscription",
+            element: <Subscription />,
           },
         ],
       },
