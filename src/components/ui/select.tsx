@@ -4,17 +4,18 @@ import { Check, ChevronDown } from "lucide-react"
 
 interface SelectProps {
   id?: string
+  placeHolder?: string
   list: string[]
   flex1?: boolean
 }
 
-export function Select({ flex1, id, list }: SelectProps) {
+export function Select({ flex1, id, list, placeHolder }: SelectProps) {
   return (
     <S.Root>
       <S.Trigger
         id={id}
         className={cn(
-          `flex h-12 w-full min-w-52 max-w-80 items-center justify-between
+          `flex h-12 w-full min-w-52 items-center justify-between
          rounded-md border border-white/50 bg-secondary-800 px-4 py-3 text-base
           placeholder:text-secondary-200 hover:border-white focus:border-white focus:outline-none
            disabled:cursor-not-allowed disabled:opacity-50 aria-expanded:border-2
@@ -22,7 +23,7 @@ export function Select({ flex1, id, list }: SelectProps) {
           { flex1 }
         )}
       >
-        <S.Value />
+        <S.Value placeholder={placeHolder} />
         <S.Icon>
           <ChevronDown className="h-4 w-4 opacity-50" />
         </S.Icon>
@@ -31,8 +32,8 @@ export function Select({ flex1, id, list }: SelectProps) {
       <S.Portal>
         <S.Content
           position="popper"
-          className={`bg-secondary-900 relative z-50 max-h-80 min-w-52
-             overflow-hidden rounded-md text-secondary-200 shadow-md`}
+          className={`relative z-50 max-h-80 min-w-52 overflow-hidden
+             rounded-md bg-secondary-900 text-secondary-200 shadow-md`}
         >
           <S.Viewport className="min-w-52 py-1">
             {list.map((item) => (

@@ -12,7 +12,7 @@ export function DashBoardHeader({ children, title }: DashBoardHeaderProps) {
 
   return (
     <header
-      className="sticky top-0 z-20 flex flex-wrap items-center gap-1
+      className="sticky top-0 z-20 col-span-2 flex flex-wrap items-center gap-1
        bg-[#242424]/80 px-4 py-4 backdrop-blur-sm sm:px-8"
     >
       <Button
@@ -25,7 +25,7 @@ export function DashBoardHeader({ children, title }: DashBoardHeaderProps) {
         <Menu />
       </Button>
 
-      <h2 className="flex-1 text-xl font-bold sm:text-3xl">{title}</h2>
+      <h2 className="flex-1 text-xl font-bold lg:text-3xl">{title}</h2>
 
       {children}
     </header>
