@@ -66,7 +66,7 @@ export function SidebarMenu() {
          xl:w-80 xl:bg-transparent aria-hidden:xl:-translate-x-80`}
     >
       <div
-        className={`h-full w-80 translate-x-0 bg-[#2f2f2f] transition-transform duration-300
+        className={`bg-secondary-900 h-full w-80 translate-x-0 transition-transform duration-300
           group-aria-hidden:-translate-x-full group-aria-hidden:xl:-translate-x-80`}
       >
         <div
@@ -102,7 +102,7 @@ export function SidebarMenu() {
           <Nav />
 
           <Button
-            className="mx-auto mb-4 mt-12 min-w-40 bg-[#2f2f2f]"
+            className="bg-secondary-900 mx-auto mb-4 mt-12 min-w-40"
             ref={logoutButtonRef}
             onKeyDown={(e) => {
               if (!e.shiftKey && e.key === "Tab" && window.innerWidth < 1280) {

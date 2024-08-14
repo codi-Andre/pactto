@@ -29,12 +29,17 @@ export default {
           200: "rgb(var(--secondary200))",
           400: "rgb(var(--secondary400))",
           700: "rgb(var(--secondary700))",
+          800: "rgb(var(--secondary800))",
+          900: "rgb(var(--secondary900))",
         },
         accent: {
           blue: "rgb(var(--accent-blue))",
           red: "rgb(var(--accent-red))",
           green: "rgb(var(--accent-green))",
         },
+      },
+      boxShadow: {
+        accent: "0 0 0 16px rgba(28,186,166,0.3)",
       },
     },
   },
