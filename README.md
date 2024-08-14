@@ -31,6 +31,7 @@ Clone o repositório e instale as dependências:
 ```bash
 git clone https://github.com/codi-Andre/pactto.git
 
+# inside repository folder
 npm install
 # or
 bun install
@@ -39,9 +40,19 @@ bun install
 Inicie o servidor:
 
 ```bash
+# inside repository folder
 npm run dev
 # or
 bun dev
+```
+
+Ou utilize Docker:
+
+```bash
+git clone https://github.com/codi-Andre/pactto.git
+
+# inside repository folder
+docker compose up
 ```
 
 Acesse http://localhost:5173 com o seu navegador para ver o resultado.
