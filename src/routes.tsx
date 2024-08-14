@@ -10,6 +10,7 @@ import { SharedLinks } from "./pages/shared-links/shared-links"
 import { PersonalInfo } from "./pages/personal-info/personal-info"
 import { Packages } from "./pages/packages/packages"
 import { Profile } from "./pages/profile/profile"
+import { Library } from "./pages/library/library"
 
 export const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
           {
             path: "/profile",
             element: <Profile />,
+          },
+          {
+            path: "/library",
+            element: <Library />,
           },
         ],
       },
