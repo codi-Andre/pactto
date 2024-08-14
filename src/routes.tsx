@@ -9,6 +9,7 @@ import { VideosToReview } from "./pages/videos-to-review/videos-to-review"
 import { SharedLinks } from "./pages/shared-links/shared-links"
 import { PersonalInfo } from "./pages/personal-info/personal-info"
 import { Packages } from "./pages/packages/packages"
+import { Profile } from "./pages/profile/profile"
 
 export const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
           {
             path: "/packages",
             element: <Packages />,
+          },
+          {
+            path: "/profile",
+            element: <Profile />,
           },
         ],
       },
