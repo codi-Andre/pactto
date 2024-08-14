@@ -6,6 +6,7 @@ import { DashboardLayout } from "./layouts/dashboard-layout"
 import { Home } from "./pages/home/home"
 import { Pacttos } from "./pages/pacttos/pacttos"
 import { VideosToReview } from "./pages/videos-to-review/videos-to-review"
+import { SharedLinks } from "./pages/shared-links/shared-links"
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
           {
             path: "/videos-to-review",
             element: <VideosToReview />,
+          },
+          {
+            path: "/shared-links",
+            element: <SharedLinks />,
           },
         ],
       },
