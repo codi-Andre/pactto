@@ -51,3 +51,6 @@ Acesse http://localhost:5173 com o seu navegador para ver o resultado.
 Este projeto foi desenvolvido usando as seguintes tecnologias:
 
 - [React](https://react.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [RadixUI](https://www.radix-ui.com/)
+- [Lucide](https://lucide.dev/)
