@@ -12,6 +12,7 @@ import { Packages } from "./pages/packages/packages"
 import { Profile } from "./pages/profile/profile"
 import { Library } from "./pages/library/library"
 import { Subscription } from "./pages/subscription/subscription"
+import { ReviewSettings } from "./pages/review-settings/review-settings"
 
 export const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ export const router = createBrowserRouter([
           {
             path: "/subscription",
             element: <Subscription />,
+          },
+          {
+            path: "/review-settings",
+            element: <ReviewSettings />,
           },
         ],
       },
