@@ -33,7 +33,7 @@ export function ReviewSettings() {
           <Checkbox label="Trackpad: reposition with 2-finger swipe" />
         </fieldset>
 
-        <fieldset className="mt-8 flex flex-col gap-12">
+        <fieldset className="mt-8 flex flex-col">
           <div className="flex items-center gap-6">
             <span>Brush size for tools</span>
             <Slider
@@ -45,6 +45,7 @@ export function ReviewSettings() {
             />
           </div>
 
+          <span className="mb-3 mt-12">Note color options</span>
           <div className="flex flex-wrap gap-3">
             <ColorPicker label="Color 1" color={color1} setColor={setColor1} />
             <ColorPicker label="Color 2" color={color2} setColor={setColor2} />
@@ -52,7 +53,7 @@ export function ReviewSettings() {
             <ColorPicker label="Color 4" color={color4} setColor={setColor4} />
           </div>
 
-          <div className="flex flex-wrap gap-8">
+          <div className="mt-12 flex flex-wrap gap-8">
             <label className="flex flex-col gap-2" htmlFor="Camera">
               Camera
               <Select list={[" "]} />
