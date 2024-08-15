@@ -61,6 +61,10 @@ export function ReviewSettings() {
               Microphone
               <Select id="Microphone" list={[" "]} flex1 />
             </label>
+            <label className="flex flex-col gap-2" htmlFor="Microphone">
+              Speakers
+              <Select id="Microphone" list={[" "]} flex1 />
+            </label>
           </div>
         </fieldset>
       </form>
