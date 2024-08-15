@@ -10,11 +10,11 @@ export function PersonalInfo() {
       <DashBoardHeader title="Personal information">
         <div className="flex justify-center gap-3 sm:mx-8 sm:justify-end">
           <Button variant="muted">reset changes</Button>
-          <Button disabled>save changes</Button>
+          <Button>save changes</Button>
         </div>
       </DashBoardHeader>
 
-      <form className="col-span-2 row-start-2 md:col-span-1">
+      <form className="col-span-2 row-start-2 xl:col-span-1">
         <fieldset className="mt-6 flex flex-col gap-4 p-4 sm:px-8">
           <Input variant="secondary" defaultValue="Name" />
           <Input variant="secondary" defaultValue="Last Name" />
