@@ -71,3 +71,29 @@
     overflow-x: hidden;
   }
 }
+
+@layer components {
+  .color-picker {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background-color: transparent;
+    border-radius: 9999px;
+    height: 30px;
+    width: 26px;
+
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 8px;
+  }
+  .color-picker::-webkit-color-swatch {
+    border-radius: 9999px;
+    border: none;
+  }
+  .color-picker::-moz-color-swatch {
+    border-radius: 9999px;
+    border: none;
+  }
+}

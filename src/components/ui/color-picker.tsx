@@ -21,7 +21,7 @@ export function ColorPicker({ color, label, setColor }: ColorPickerProps) {
         {label}
       </span>
       <input
-        className="absolute right-2 top-5 h-5 w-5 rounded-full border-none outline-none hover:cursor-pointer focus:outline-none"
+        className="color-picker"
         type="color"
         value={color}
         onChange={(e) => setColor(e.target.value)}
