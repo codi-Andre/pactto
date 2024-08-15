@@ -80,7 +80,7 @@
 
     background-color: transparent;
     border-radius: 9999px;
-    height: 30px;
+    height: 26px;
     width: 26px;
 
     cursor: pointer;
@@ -91,9 +91,12 @@
   .color-picker::-webkit-color-swatch {
     border-radius: 9999px;
     border: none;
+    height: 22px;
   }
   .color-picker::-moz-color-swatch {
     border-radius: 9999px;
     border: none;
+    height: 26px;
+    width: 26px;
   }
 }
