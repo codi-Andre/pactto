@@ -10,9 +10,8 @@ export function Subscription() {
 
       <div className="flex flex-col gap-6 p-4 sm:px-8">
         <p>
-          You have access to{" "}
-          <strong className="text-white underline">PACTTO PRO</strong> as a
-          trial. 7 days left
+          You have access to <strong className="text-white">PACTTO PRO</strong>{" "}
+          as a trial. 7 days left
         </p>
 
         <Button className="max-w-80" variant="secondary">

@@ -20,7 +20,7 @@ export function Profile() {
 
       <form className="col-span-2 row-start-2 grid grid-cols-1 md:grid-cols-2">
         <fieldset className="mt-6 flex flex-col gap-4 p-4 sm:px-8 md:col-start-2 md:row-span-2">
-          <label className="flex flex-col gap-1">
+          <label className="flex flex-col gap-1 hover:cursor-pointer">
             Avatar
             <div className="w-full bg-primary-800 py-4">
               <User2 size={160} className="m-auto rounded-full bg-blue-200" />
@@ -29,7 +29,8 @@ export function Profile() {
           </label>
           <label className="flex flex-col gap-1">
             Carousel
-            <Button className="max-w-40">
+            <input type="file" hidden />
+            <Button type="button" className="max-w-52">
               <Plus size={14} strokeWidth={3} className="mr-1" aria-hidden />{" "}
               add image
             </Button>
